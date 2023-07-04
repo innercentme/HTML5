@@ -1,3 +1,4 @@
+# HTML 5
 І have created a comprehensive HTML course that serves as a solid starting point for those interested in learning web development. While the course doesn't cover every single HTML tag and attribute, it provides a strong foundation in the basics of HTML.
 
 The course is carefully structured and covers essential topics such as the structure of an HTML document, formatting text, creating links, working with images, and understanding forms. By focusing on these core aspects, students can gain a good understanding of how to create simple web pages.
