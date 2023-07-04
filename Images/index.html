@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+<!--  Read before start
+
+The <img> element is used to simply insert an image without additional semantics. 
+You specify the path to the image using the src attribute and alt text can be added using the alt attribute. 
+However, the <img> element itself does not provide additional information about the image or its context.
+
+The <picture> element, which contains <source> tags, allows you to set different image options depending on the conditions. 
+Each <source> element has a srcset attribute that specifies the path to the image, and a media attribute that specifies the condition for using that image. 
+Using <picture> you can make images responsive based on window sizes or other parameters.
+
+The <figure> element is used to group an image together with its caption or description. You can use it to create blocks of images with their description or caption. 
+  Users will be able to more easily perceive the connection between the image and its description, since they are in the same block.
+
+-->
+
+
+
+    <img src="istockphoto-1086610854-612x612.jpg" alt="The man who looking on moon">
+    <!--
+      The code <img src="istockphoto-1086610854-612x612.jpg" alt="The man who looking on moon"> represents the <img> element used to insert an image on a web page. 
+      The "src" attribute specifies the path to the image file "istockphoto-1086610854-612x612.jpg". 
+      The "alt" attribute defines the alternative text that is displayed if the image cannot be loaded or if the user is using a web reader.
+    
+    -->
+
+    <picture>
+        <source srcset="imageNumber4.png" media="(min-width: 1200px)">
+        <source srcset="imageNumber3.png" media="(min-width: 768px)">
+        <source srcset="imageNumber2.png" media="(min-width: 300px)">
+        <img src="imageNumber1.png" alt="Image 3">
+      </picture>
+      <!--
+        The <picture> code is used to select and display the optimal image depending on the characteristics of the device and the size of the viewport. 
+        Let's take a look at its components:
+
+        1. <picture>: 
+        This is a container element that contains image options to choose from. Inside it are the <source> elements and the <img> element.
+
+        2. <source>: 
+        This is the element that defines the image variant to select. 
+        In the code, we have three <source> elements, each of which has a srcset attribute that specifies the path to the image, and a media attribute
+        that sets the media query to select the image. The first <source> has the media request (min-width: 1200px) and the image path, the second has (min-width: 768px)
+        and the corresponding path, and the third has (min-width: 300px) and the corresponding path.
+
+        3. <img>: 
+        This is an element that sets the initial image that is used if none of the <source> elements are suitable for the device or the media request is not satisfied.
+      -->
+
+      <figure>
+        <img src="moon-and-man.png" alt="The man who looking at moon">
+        <figcaption><p>The simple picture with man who looking at moon at night</p></figcaption>
+      </figure>
+      <!--
+        The <figure> code is used to group an image together with its caption or description. 
+        Let's take a look at each component:
+
+        1. <figure>: 
+        This is a container element that contains an image and its caption or description. In this case, we have an image and a corresponding caption wrapped in a <figure>.
+        
+        2. <figcaption>: 
+        This is an element used to define a caption or description for an image. 
+        In our case, we have a <figcaption> element that contains a <p> element with the caption or description text of the image.
+      -->
+
+</body>
+</html>
