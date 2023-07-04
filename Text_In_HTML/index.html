@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 
+        The <p> element is used to display text in paragraphs on a web page. All text that is placed between the opening and closing <p> tags.
+
+        The <address> element  contains information about the address or contact details. 
+        In this case, the text "Sihovskiy Vladislav" is displayed as the address or name of the author.    
+     -->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <address>Sihovskiy Vladislav</address> 
+
+    <hr>
+
+    <!--The <q> tag is used to indicate short quotes within the text. 
+        This tag helps to emphasize the quote and distinguishes it from regular text by using quotation marks or other stylized formatting. -->
+    <p>Quote from the text:<q> some important quote</q></p>
+    <address>Sihovskiy Vladislav</address>
+
+    <hr>
+
+    <!-- 
+        The <blockquote> tag is used to display a block of a quote or a large piece of text that is accepted by an external party.
+
+        The <cite> tag is used to indicate the titles of sources, such as books, articles, music, and other resources from which information on a web page is quoted or taken.
+     -->
+    <blockquote>
+        <q>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Amet voluptates dolores minus nesciunt est repudiandae possimus? 
+            Adipisci recusandae, non, maxime libero maiores architecto
+             molestias vero enim consequatur assumenda autem iure.
+        </q>
+        <cite>Sihovskiy Vladislav</cite>
+    </blockquote>
+    
+    <hr>
+
+    <!--
+    Tags <b>, <i>, <tt>, <s> are used to highlight text and give it a specific stylized appearance on a web page. 
+    However, these tags have no semantic meaning and are used mainly for decorative purposes.
+
+    <b> - This tag is used to highlight text and give it a bold style. It does not add any additional semantic meaning to the text, but only makes it look bolder.
+
+    <i> - This tag is used to emphasize text and make it italic. It also has no special semantic meaning, but only changes the appearance of the text.
+
+    <tt> - This tag is used to highlight text and give it a style similar to typewritten text.
+    However, in modern browsers, its styling can vary. It also has no semantic meaning and is used mainly for decorative purposes.
+
+    <s> - his tag is used to highlight text and create a strikethrough effect. 
+    It indicates that the text has been deleted or is no longer relevant. Like the previous tags, it has no semantic meaning and is only used for visual effect.
+    -->
+
+    <b>Bold text</b>
+    <br>
+    <i>Italic text</i>
+    <br>
+    <tt>Machine-generated text</tt>
+    <br>
+    <s>Strikethrough text</s>
+
+    <hr>
+
+    <!--
+    The <strong> and <em> tags are used to give semantic meaning to text and to make it stand out visually on a web page.
+
+    <strong> - This tag is used to highlight text and give it semantic power or weight. 
+    It conveys the importance or weight of the text, which can be useful to search engines and people viewing the page. 
+    Usually, text surrounded by the tag <strong> appears in bold, but the appearance may depend on the styling of the page.
+    
+    <em> - This tag is used to highlight text and give it a semantic meaning that indicates emotional emphasis, emphasis, or importance. 
+    It conveys the tone and expressiveness of the text. 
+    Typically, text surrounded by an <em> tag appears in italics, but again, the appearance may depend on the page styling.
+
+        
+    The use of <strong> and <em> tags is recommended instead of <b> and <i> because they carry semantic meaning that helps search engines and tools understand
+    the importance and emotional emphasis of the text, as well as promotes accessibility and better understanding of the content by users.
+    -->
+
+    <strong>Important text</strong>
+    <br>
+    <em>Highlighted text</em>
+
+    <hr>
+
+    <!--
+    The <small> and <big> tags are used to logically highlight less important or smaller text (<small>) and important or larger text (<big>) on a web page. 
+    However, the use of these tags in modern web standards (HTML5) is not recommended as they have lost their semantic meaning and do not have a standard style definition.
+
+    Instead of these tags, it is recommended to use more semantic and structural tags, such as headings (<h1>, <h2>, etc.) or to style the text with CSS.
+
+    <big> -  This tag is used to highlight important or larger text on the page.
+
+    <small> - This tag is used to highlight less important or smaller text on the page. 
+    -->
+    <big>Important</big>
+    <br>
+    <small>Something less important</small>
+
+    <br>
+
+    <p>
+    This is a <small>small</small> paragraph containing some <big>important</big> information.
+    </p>
+
+    <hr>
+
+    <!-- 
+    Two more types of text formatting in HTML:
+    
+    <del> - This tag is used to strike through text.
+
+    <ins> - This tag is used to underline text.
+    
+    The <del> and <ins> tags have no semantic content in HTML. They are used mainly for visual formatting of text, not for conveying semantic meaning.
+    -->
+
+    <ins>Underlined</ins>
+    <br>
+    <del>Striked out</del>
+
+    <hr>
+
+    <!--
+    In HTML, the <sub> and <sup> tags are used to display text as an upper and lower index.
+    
+    <sub> - This tag is used to display text as a subscript.
+
+    <sup> - This tag is used to display text as a superscript.
+    -->
+
+    <p>H<sub>2</sub>0</p>
+    <br>
+    <p>x<sup>2</sup>=9</p>
+
+    <hr>
+
+    <!--
+    Setting the date and time on the website
+
+    The <time> tag is used to indicate the date or time on a web page. It can have a "datetime" attribute that specifies the exact date or time in ISO 8601 format.
+    
+    Interesting fact: The <time> tag can also include additional elements such as <date>, <time>, <day>, <month>, <year> to specify a date or time in more detail.
+    -->
+
+    <time>2000-02-02</time>
+    <br>
+    <time datetime="2000-02-02">My birthday</time>
+    <br>
+    <time datetime="1989-02-11">
+        <date>11</date>
+        <month>February</month>
+        <year>1989</year>
+    </time>
+
+    <hr>
+
+    <!-- 
+    The <code> tag is used to display text as a code.
+    -->
+
+    <code>
+    function multiply () {
+    const number1 = 500;
+    const number2 = 1000;
+    const sum = number1 * number2;
+    console.log(sum);
+    }
+    multiply();
+    </code>
+
+    <hr>
+
+    <!--
+    The <pre> tag is used to pre-format text, preserving all spaces, line breaks, and other whitespace characters of the internal structure. 
+    When used with the <code> tag, they create a block of formatted code that will be displayed on the page.
+    -->
+    <pre>
+    <code>
+    function multiply () {
+    const number1 = 500;
+    const number2 = 1000;
+    const sum = number1 * number2;
+    console.log(sum);
+    }
+    multiply();
+    </code>
+    </pre>
+</body>
+</html>
