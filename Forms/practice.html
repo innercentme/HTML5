@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="halder.php" name="Register-Form" autocomplete="on">
+        <fieldset>
+            <legend><h2>Register Form</h2></legend>
+            <label for="username">Username</label>
+            <input id="username" type="text" autofocus required>
+            <br>
+            <label for="password">Password</label>
+            <input id="password" type="password" required>
+            <br>
+            <label for="email">Email</label>
+            <input id="email" type="email" autofocus required>
+            <br>
+            <p>Please, read about our company , before register!</p>
+        </fieldset>
+        <fieldset>
+            <legend>Your Personal Data</legend>
+            <label for="typeOfDeveloper">Your sphere </label>
+            <select name="typeOfDevelopers" id="typeOfDeveloper" required>
+                <option disabled selected hidden>Виберіть варіант</option>
+                <option value="Front-end">Front-end Developer</option>
+                <option value="Back-end">Back-end Developer</option>
+                <option value="Full-stack">Full-stack Developer</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Your Personal Infomation</legend>
+            <label for="personal-data-info">Tell something about you :</label> <br>
+            <textarea name="infomation-area" id="personal-data-info" cols="30" rows="10" required></textarea>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
