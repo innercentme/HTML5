@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inputs</title>
+</head>
+<body>
+    <!--
+    The <input type="text"> element is used to create a text input field where the user can enter text. 
+    Let's look at the possible attributes that can be used with this element:    
+
+    1. "name": 
+    Defines the name of the input field, which is used to identify the field when processing the form on the server side or using JavaScript.
+
+    2. "value": 
+    Sets the default value for the text field.
+
+    3. "placeholder": 
+    Sets the tooltip text that is displayed in the input field to provide the user with context or expectations for input.
+
+    4. "required": 
+    Indicates that the input field is required before the form is submitted. If the user tries to submit the form without a required field filled in, an error will be displayed.
+
+    5. "disabled": Indicates that the input field is disabled and cannot be edited or active for user interaction.
+
+    6. "maxlength": 
+    Sets the maximum number of characters the text field can contain.
+
+    7. "pattern": 
+    Sets the regular expression used to validate the value entered by the user.
+
+    8. "autocomplete": 
+    Specifies whether the browser should automatically fill in the value of the input field based on previous user input or saved settings.
+
+    9. "readonly": 
+    Specifies that the input field can be viewed but not edited by the user.
+    -->
+    <input type="text" name="input" value="15" autocomplete="on">
+    <input type="text" placeholder="Here to type..." required maxlength="2" pattern="[A-Za-z]{3}">
+    <input type="text" disabled readonly>
+
+    <hr>
+
+    <!--
+    The <input type="number"> element is used to create a numeric input field. 
+    Here are some of the possible attributes you can use with this element:
+
+    1. "min": 
+    Sets the minimum valid value for the number you enter.
+
+    2. "max": 
+    Sets the maximum valid value for the number you're entering.
+
+    3. "step": 
+    Sets the increment by which the value changes when you use the arrows in the field.
+    -->
+    <input type="number" min="0" max="100" step="1" value="50" required readonly>
+
+    <hr>
+
+    <!--
+    The <input type="password"> element is used to create a password field. 
+    Here are some of the possible attributes that can be used with this element:
+
+    1. "minlength": 
+    Sets the minimum length of the password.
+
+    2. "maxlength": 
+    Sets the maximum allowed password length.
+    -->
+    <input type="password" minlength="8" maxlength="20" required>
+
+    <hr>
+
+    <!--
+    The <input type="range"> element is used to create a slider that allows you to select a value from a specific range.
+    Here are some of the possible attributes that can be used with this element:
+
+    1. "min": 
+    Sets the minimum value from the range.
+
+    2. "max": 
+    Sets the maximum value from the range.
+
+    3. "step": 
+    Sets the increment with which the value changes when you move the slider.
+    -->
+
+    <input type="range" min="0" max="100" step="1" value="50">
+
+    <hr>
+
+    <!--
+    The <input type="date"> element is used to select a date from the calendar. 
+    Here are some of the possible attributes you can use with this element:
+
+    1. "min": 
+    Sets the smallest date that can be selected.
+
+    2. "max": 
+    Sets the largest date that can be selected.
+
+    3. "value": 
+    Sets the starting date.
+    -->
+
+    <input type="date" min="2023-06-17" max="2023-07-11">
+
+    <hr>
+
+    <!--
+    The <input type="color"> element is used to select a color. 
+    Here are some possible attributes that can be used with this element:
+
+    1. "value": 
+    Sets the initial value of the color, represented as an RGB hexadecimal code or color name.
+    -->
+    <input type="color" value="#FF0000" name="colorPicker" required>
+    
+    <br>
+
+    <input type="color" list="color-options">
+    <hr>
+    <datalist id="color-options">
+        <option>#FF0000</option>
+        <option>#00FF00</option>
+        <option>#0000FF</option>
+    </datalist>
+
+    <hr>
+
+    <!--
+    The <input type="submit"> and <input type="reset"> elements are used to submit and reset the form, respectively. 
+    Here are some possible attributes that can be used with these elements:\
+
+    1. "value": 
+    Sets the text label on the form's reset button.
+    -->
+    <input type="submit" value="Send the form">
+    <input type="reset" value="Reset the form">
+
+    <hr>
+
+    <!--
+    The <input type="email"> element is used to create a text field where the user can enter their email address. 
+    This type of field allows you to check for the correctness of the email format.
+    -->
+    <input type="email">
+
+    <hr>
+
+    <!-- 
+    The <input type="url"> element is used to create a text field where the user can enter a URL. 
+    This type of field allows you to check for the correctness of the URL format.
+    -->
+    <input type="url">
+
+    <hr>
+
+    <!--
+    The <input type="tel"> element is used to create a text field where the user can enter a phone number. 
+    This type of field allows you to enter numbers, "+" and "-" symbols, and some other characters that are commonly used in phone numbers.
+    -->
+    <input type="tel">
+
+    <hr>
+
+    <!--
+    The <input type="search"> element is used to create a text field that is intended for entering a search query. 
+    It provides additional semantics for search fields and can also activate the search functionality in the browser.
+    -->
+    <input type="search">
+
+    <hr>
+
+    <!--
+    The <input type="datetime-local"> element is used to create a date and time input field. 
+    It allows users to select the date and time from the local calendar and clock on their devices.
+    -->
+    <input type="datetime-local">
+
+    <hr>
+
+    <!--
+    The <input> elements with the attributes type="time", type="month", and type="week" are used to create input fields for selecting the time, month, and week, respectively.
+    -->
+    <input type="time">
+    <input type="month">
+    <input type="week">
+
+    <hr>
+
+    <!--
+    The <input type="hidden"> element is used to create a hidden field in a form that is not displayed on the web page, 
+    but is transmitted along with other data when the form is sent to the server.
+
+    The main feature of a <input type="hidden"> field is that it is not displayed to the user, so they cannot change its value or interact with it directly.
+    -->
+    <input type="hidden">
+
+    <hr>
+
+    <!--
+    The <input type="file"> element is used to create a file input field on a form that allows the user to select and send one or more files to the server.
+    The main feature of the <input type="file"> field is that it displays a button or text box that the user can click to open a file selection dialog box from their computer.
+    Here are some possible uses and properties of <input type="file">:
+
+    1. "name": 
+    Sets the name of the field to identify it on the server after the form is submitted.
+
+    2. "accept": 
+    Sets the list of MIME file types that can be selected by the user. For example, accept="image/*" restricts the selection to images only.
+
+    3. "multiple": 
+    Allows the user to select multiple files to submit. When set to multiple, the user can select multiple files by pressing Shift or Ctrl (or Command on Mac) while selecting files.
+    -->
+    <input type="file">
+    <input type="file" multiple accept="image/*">
+
+    <hr>
+
+    <!--
+    The <input type="radio"> element is used to create radio buttons in a form where the user can select one option from several options.
+    The main feature of the <input type="radio"> field is that it allows you to group radio buttons using the name attribute, 
+    which provides the ability to select only one option from the group.
+
+    Here are some possible uses and properties of <input type="radio">:
+
+    1. "name": 
+    Sets the name of the radio button group to which this radio button belongs.
+
+    2. "value": 
+    Sets the value that will be sent to the server if this radio button is selected by the user.
+
+    3. "checked": 
+    Sets the radio button to be selected by default. This is typically used for one of the radio buttons in a group.
+    -->
+    <input type="radio" name="value" value="option1">
+    <input type="radio" name="value" value="option2">
+    <input type="radio" name="value" value="option3">
+
+    <hr>
+
+    <!--
+    The <input type="checkbox"> element is used to create a checkbox in a form that can have two states - selected or unselected.
+
+    The main properties of <input type="checkbox"> include:
+
+    1. "value": 
+    Sets the value that will be sent to the server if the checkbox is selected.
+
+    2. "checked": 
+    Sets the checkbox to be selected by default.
+
+    The example <input type="checkbox" value="option1" checked> creates a checkbox with the value "option1" that will be selected by default. 
+    If the user deselects the checkbox, the value will not be sent to the server. If the checkbox remains selected, 
+    the value "option1" will be sent to the server when the form is submitted.
+
+    Checkboxes are often used to allow or select certain options or parameters in a form
+    -->
+    <input type="checkbox" value="option1" checked>
+    <input type="checkbox" value="option2">
+    <input type="checkbox" value="option3">
+
+</body>
+</html>
