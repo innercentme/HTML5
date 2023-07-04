@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="halder.php" name="Form" autocomplete="on">
+    <fieldset>
+        <legend>Login Form</legend>
+        <label for="username">Username</label>
+        <input id="username" required>
+        <br>
+        <label >
+            Password <input type="password"> required
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Personal Message</legend>
+        <label for="personal">Write a personal message!</label>
+        <textarea name="textarea" id="personal" cols="30" rows="10" required></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>Personal Data</legend>
+        <label for="personal-data">Here to choose!</label>
+        <select id="personal-data">
+            <option value="1">Front-end</option>
+            <option value="2">Back-end</option>
+            <option value="3">Full-stack</option>
+        </select>
+        <select name="" id="" multiple>
+            <optgroup>
+                <option value="1">Front-end</option>
+            <option value="2">Back-end</option>
+            <option value="3">Full-stack</option>
+            </optgroup>
+            <optgroup>
+                <option value="1">Front-end</option>
+            <option value="2">Back-end</option>
+            <option value="3">Full-stack</option>
+            </optgroup>
+        </select>
+    </fieldset>
+    <input type="submit" value="send">
+</form>
+
+    <!-- 
+            This code represents an HTML form that contains various elements for entering and selecting data. 
+            The basic structure of the form includes the use of <fieldset>, <legend>, <label>, <input>, <textarea>, <select>, <optgroup> and <option> elements. 
+            Let's analyze each element separately:
+
+        1. <form action="halder.php" name="Form" autocomplete="on">: 
+            This tag defines the beginning of the form and sets the form attributes such as "action" (specifies the URL to process the form data),
+            "name" (name forms) and "autocomplete" (indicates whether autocomplete for form fields should be enabled).
+
+        2. <fieldset>: 
+            This tag defines a group of related form elements. In this case, three <fieldset> elements are used to divide the form into three sections: 
+            "Login Form", "Personal Message" and "Personal Data".
+
+        3. <legend>: 
+            This tag defines a caption for each group of elements in the <fieldset>. 
+            The headings "Login Form", "Personal Message" and "Personal Data" indicate the content of each group of elements.
+
+        4. <label>: 
+            This tag defines a label (textual description) for an input or selection field. 
+            Used for a linked element to provide a link between a label and a form element. 
+            The "for" attribute is usually used to specify the ID of the associated element.
+
+        5. <input>: 
+            This tag is used to create input fields. The specified code uses two input fields of type "text" and "password". 
+            For the first field, the "id" attribute is used to indicate the field identifier, as well as the "required" attribute, which indicates that the field is mandatory.
+        
+        6. <textarea>: 
+            This tag is used to create a text input field with multiple lines. 
+            In this case, the "name", "id", "cols" (number of columns) and "rows" (number of rows) attributes are set,
+            as well as the "required" attribute to indicate mandatory filling.
+
+        7. <select>: 
+            This tag is used to create a select list. There are two <select> elements in the code. 
+            The first one contains several <option> elements that represent choices. The second contains two <optgroup> groups, 
+            each of which contains its own <option> elements. Additionally, the first <select> element has an "id" attribute, 
+            and the second has a "multiple" attribute, which allows you to select multiple options at once.
+
+        8. <input type="submit" value="send">: 
+            This tag is used to create a form submit button. 
+            The set type "submit" means that the button sends the form data to the server. 
+            The value of the "value" attribute specifies the text that will be displayed on the button.
+
+     -->
+
+     <h1>Also you can check my first <a href="practice.html" target="_blank">form. </a></h1>
+
+</body>
+</html>
