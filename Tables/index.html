@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+table {
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+td:hover {
+    background-color: #e5e5e5;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- 
+        Creating a table. Its elements
+
+        The main element for creating a table in HTML is the <table> element. The table can contain the following elements:
+        
+        <caption> -  Used to provide a title or description for the table. 
+        This element is placed immediately after the opening <table> tag, and its content is displayed above the table.
+
+        <thead> -  Used to group the column headers of the table. 
+        This element is placed inside the <table> element, and its content consists of one or more rows represented by <tr> elements.
+
+        <tbody> - Used to group the main content of the table. 
+        This element is placed inside the <table> element, and its content consists of one or more rows represented by <tr> elements.
+
+        <tfoot> - Used to group the table footer or additional information. 
+        This element is placed inside the <table> element, and its content consists of one or more rows represented by <tr> elements.
+
+        <tr> - Used to represent table rows. This element is placed inside <thead>, <tbody>, <tfoot>, or <table>, and its content consists of one or more <td> or <th> elements.
+
+        <td> - Used to represent data cells in the table. This element is placed inside <tr>, and its content represents the value of the data cell.
+
+        <th> - Used to represent column or row headers in the table. This element is placed inside <tr>, and its content represents the header of the cell.
+        
+     -->
+
+     <h1>A simple example of a table</h1>
+     <!-- Below, I've written a simple table using CSS styles so that you can see the table structure in detail  -->
+
+    <table>
+        <caption>
+            Personnel of the development team in the company
+        </caption>
+            <thead>
+                <tr>
+                    <th>Domain</th>
+                    <th colspan="4" >Domain information</th>
+                <!--
+                    The "colspan" attribute is used in HTML table cells (<td> or <th>) to specify the number of columns that a cell should span horizontally. 
+                    It allows a cell to extend across multiple columns.
+
+                    There is also a "rowspan" attribute that you can use yourself.
+                 -->
+                </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>Personal composition of the team</td>
+                <td>Front-end Developer</td>
+                <td>Back-end Developer</td>
+                <td>Full-stack Developer</td>
+                <td>QA Testing</td>
+            </tr>
+            <tr>
+                <td>Field of activity</td>
+                <td>Web</td>
+                <td>Database</td>
+                <td>Web & Database</td>
+                <td>Testing</td>
+            </tr>
+            <tr>
+                <td>Number of developers</td>
+                <td>5 Developers</td>
+                <td>3 Developers</td>
+                <td>2 Developers</td>
+                <td>2 Developers</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Above you watched our development team at webDevs</td>
+            </tr>
+        </tfoot>
+          
+</body>
+</html>
