@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        This <meta> tag is used to define the character encoding of a document, and indicates to the browser that the content of the page should be displayed using UTF-8 encoding.
+
+        UTF-8 is a standard character encoding that supports a wide range of languages and characters, including Latin, Cyrillic, Asian scripts, and many others. 
+        Setting the character encoding to UTF-8 allows you to use a variety of languages and special characters without display issues.
+     -->
+    <meta charset="UTF-8">
+
+    <!-- 
+        This <meta> tag is used to customize the viewport meta tag on mobile devices and responsive web design.
+
+            Attributes
+
+        The "name"attribute with a value of "viewport" indicates that we are configuring a viewport meta tag.
+        The "content" attribute defines specific viewport settings. 
+        In this case, the value content="width=device-width" means that the page width should match the device width.
+        The value content="initial-scale=1.0" indicates that the initial scale of the page should be 1.0.
+     -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- The user-scalable=no value indicates that users are not allowed to scale the page. -->
+    <meta name="viewport" content="user-scalable=no">
+
+
+    <!-- 
+        This <link> tag is used to set an icon for a web page.
+
+        Attributes
+
+        The "sizes" attribute specifies the dimensions of the icon in width x height format. 
+        The "rel" attribute with the value "shortcut icon" indicates that this file is the favicon for the page.
+        The "href" attribute specifies the path to the favicon file. In this case, html.png indicates that the favicon file is located in the same folder as the HTML document.
+        The "type" attribute specifies the type of the favicon file. In this case, image/png indicates that this is an PNG image.
+
+        The link tag is not used only for embedding icons on a website.
+    -->
+    <link sizes="100x100" rel="shortcut icon" href="html.png" type="image/png">
+
+    <!-- 
+    Setting up the right SEO (Search Engine Optimization) information can help improve the visibility of a web page in search engines. 
+    Here is the correct format for setting up some key meta tags for SEO:
+    -->
+    <meta name="description" content="Welcome to my first website!" >
+    <meta name="keywords" content="HTML, CSS , JavaScript" >
+    <meta name="author" content="Sikhovsky Vladislav">
+
+    <!-- Also
+    The value of the "name" attribute determines what kind of information is passed to the meta tag.
+
+    The "content" attribute is used to pass a specific value or data to the meta tag.
+    -->
+
+    <!--
+        To tell the Edge browser that it should open your website in the latest version, you can use the http-equiv meta tag with the value "X-UA-Compatible" 
+        and the content attribute that indicates the browser version.
+     -->
+
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+     <!-- Google Fonts-->
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Scripts. Place at the end of an HTML document. -->
+    <script src="app.js"></script>
+</body>
+</html>
