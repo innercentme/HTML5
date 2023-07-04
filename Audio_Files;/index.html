@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Files</title>
+</head>
+<body>
+    <!--
+    The <audio> element is used to play audio on web pages.
+
+    The controls attribute tells the browser that the <audio> element should display audio controls (such as play, pause, and volume buttons).
+
+    In addition, you can also use other attributes, such as:
+
+    "autoplay": 
+    Tells the browser to automatically play the audio when the page loads.
+
+    "loop": 
+    Tells the browser to repeat the audio continuously.
+
+    "preload": 
+    Tells the browser how the audio should be loaded before playing. Values can be none, metadata, or auto (automatically load audio).
+
+    "controlsList": 
+    Specifies which controls should be displayed in the control panel. Values can be nodownload (disable the download button) and other values depending on the browser.
+    -->
+    <audio controls src="audio-file.mp3">
+        Ваш браузер не підтримує аудіо-тег.
+      </audio>
+      
+      <!--
+    The <video> element is used to play videos on web pages.
+
+    The "poster" attribute specifies the URL of an image that will be displayed as a poster for the video before it plays.
+
+    You can add additional <source> tags inside the <video> element to specify different video formats and their types. 
+    This will allow the browser to select a supported video format for playback. For example, the example uses MP4 and WebM formats.
+      -->
+      <video controls loop poster="preview.png" preload="none">
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        Ваш браузер не підтримує відео-тег.
+      </video>
+      
+      <!--
+    The <audio> element is used to play audio on web pages.
+    
+    The "autoplay" attribute tells the browser to automatically play audio when the page loads.
+
+    The "muted" attribute tells the browser to play audio without sound.
+      -->
+    <audio controls autoplay muted>
+        <source src="audio.mp3" type="audio/mp3">
+        <source src="audio.ogg" type="audio/ogg">
+        Ваш браузер не підтримує аудіо-тег.
+    </audio>
+</body>
+</html>
