@@ -13,4 +13,4 @@ Additionally, each element in the course is thoroughly explained and documented 
 
 For beginners starting out with HTML, there's no immediate need to dive into the CSS styling sections. The main focus of the course is to provide a solid understanding of HTML markup, structure, and the usage of various tags and attributes. By separating the HTML and CSS content, beginners can focus on grasping the HTML concepts first before delving into CSS styling, allowing them to build a strong foundation.
 
-Overall, the course offers a comprehensive introduction to HTML, featuring clear explanations, examples, and comments to aid understanding. It is designed in a way that allows learners to progressively expand their knowledge and skills in HTML, ensuring a smooth learning journey.
+Overall, the course offers a comprehensive introduction to HTML, featuring clear explanations, examples, and comments to aid understanding. It is designed in a way that allows learners to progressively expand their knowledge and skills in HTML, ensuring a smooth learning journey. 
